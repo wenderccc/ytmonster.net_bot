@@ -7,15 +7,7 @@ import pickle
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 
-
-print('Введите сначала ваш логин от YTMonster, а потом пароль')
-passyt = input('Логин: ')
-logyt = input('Пароль: ')
-with open('pass_yt.txt', 'w') as file:
-    file.write(passyt)
-with open('log_yt.txt', 'w') as file:
-file.write(logyt)
-print('Отлично! Теперь, войдите вручную в ваш гугл аккаунт (Сейчас появится браузер)')
+print('Войдите вручную в ваш гугл аккаунт (Сейчас появится браузер)')
 driver = webdriver.Chrome()
 driver.get("https://www.youtube.com/")
 input('Войдите как обычно, а потом нажмите Enter. Если вам пишут, что вход небезопасен, то создайте новый аккаунт.')
